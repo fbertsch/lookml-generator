@@ -33,16 +33,16 @@ def custom_namespaces(tmp_path):
               owners:
               - custom-owner@allizom.com
               canonical_app_name: Custom
-              views:
-                baseline:
-                  type: ping_view
-                  tables:
-                  - channel: release
-                    table: mozdata.custom.baseline
+              channels:
+              - channel: release
+                dataset: mozdata.custom
             disallowed:
               owners:
               - disallowed-owner@allizom.com
               canonical_app_name: Disallowed
+              channels:
+              - channel: release
+                dataset: mozdata.disallow.*
               views:
                 baseline:
                   type: ping_view

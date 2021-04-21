@@ -5,6 +5,7 @@ import tarfile
 import urllib.request
 import warnings
 from collections import defaultdict
+from dataclasses import dataclass
 from datetime import datetime
 from io import BytesIO
 from itertools import groupby
@@ -23,6 +24,10 @@ PROBE_INFO_BASE_URI = "https://probeinfo.telemetry.mozilla.org"
 
 def _get_first(tuple_):
     return tuple_[0]
+
+
+@dataclass
+class
 
 
 def _get_db_views(uri):
